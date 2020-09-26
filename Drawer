@@ -1,0 +1,35 @@
+// # flutter drawer
+
+#include'package: flutter/material.dart';
+
+Class (class name) extends StatelessWidget{
+@override
+
+Widget build (BuildContext context) {
+return Drawer(
+child: ListView(
+padding: EdgeInsets.fromLTRB(0,0,0,10),
+children: <Widget>[
+DrawerHeader(
+decoration:BoxDecoration(
+color: Colors.blueAccent,
+),
+
+child:Text("Deets",
+style: (TextStyle (fontSize:30)),),
+),
+
+ListTile(
+title: Text('heading1'),
+onTap:(){
+//Update the state of the app.
+//...
+// Then close the drawer.
+Navigator.push(
+context,
+MaterialPageRoute(builder: (context) => SecondRoute() ),
+
+);
+],
+}
+}
